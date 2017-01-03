@@ -272,7 +272,7 @@ header {
 	  	font-size: 1em;
 	  	width: 50%;
 	  	line-height: 1.5;
-	    margin: 7.5em auto;
+	    margin: 7em auto;
 	    text-align: center;
 	    font-weight: 400;
 	  }
@@ -294,11 +294,79 @@ header {
 // --------------------- Works Section Styles ------------------------ //
 
 .works {
-	max-width: 1200px;
+	max-width: 1220px;
   margin: 0 auto;
   text-align: center;
   margin-top: 6em;
   position: relative;
+
+  .work-list {
+  	list-style: none;
+  	margin: 0;
+		padding: 0;
+
+  	li {
+			width: 25%;
+			float: left;
+			display: inline-block;
+			position: relative;
+			margin-bottom: -4px;
+			overflow: hidden;
+			transition: transform 0.4s, opacity 0.1s 0.3s;
+			img {
+				width: 100%;
+				max-width: 100%;
+			}
+			.work-info {
+				background: rgba($highlight_3, 0.85);
+				padding-top: 10em;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: auto;
+				bottom: 0;
+				opacity: 0;
+				transform: translateY(100%);
+				transition: transform 0.4s, opacity 0.1s 0.3s;
+				h2 {
+					color: $white;
+					font-size: 1.25em;
+					text-transform: uppercase;
+					line-height: 1.5;
+					padding: 2em 0 0.7em;
+				}
+				.button {
+					border: 2px solid $white;
+					color: $white;
+					padding: 1em 1.5em;
+					text-decoration: none;
+					font-size: 0.75em;
+					font-weight: 700;
+					text-transform: uppercase;
+					border-radius: 0.5em;
+					transition: all 0.3s ease-in-out;
+					&:hover {
+						border: 2px solid $highlight_2;
+						color: $highlight_2;
+					}
+				}
+
+			}
+
+			&:hover {
+				img {
+					transform: scale(1.5);
+					transition: transform 0.4s, opacity 0.1s 0.3s;
+				}
+				.work-info {
+					opacity: 1;
+					transform: translateY(0px);
+					transition: transform 0.4s, opacity 0.1s;
+				}
+			}
+
+		}
+  }
 }
 
     
