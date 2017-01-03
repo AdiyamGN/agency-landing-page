@@ -42,12 +42,51 @@ body {
 	font-size: 1.15em;
 	border-radius: 0.25em;
 	padding: 0.8em 2.2em;
+	-webkit-box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+	-moz-box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+	box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
 }
 
 .btn-primary {
 	border-color: $highlight_2;
   color: $white;
   background-color: $highlight_2;
+}
+
+.section-header {
+	margin-bottom: 40px;
+
+	h1 {
+		font-size: 2.2em;
+    font-weight: 400;
+    margin: 0 auto;
+    color: $main;
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+
+    &:before {
+    	content: "";
+	    display: block;
+	    width: 90px;
+	    height: 3px;
+	    background: #76b133;
+	    position: absolute;
+	    margin: auto;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+    }
+	}
+
+	p {
+   	color: $secondary;
+   	font-size: 0.9em;
+   	margin: 0 auto;
+   	text-align: center;
+  }
+
 }
 
 
@@ -143,7 +182,7 @@ header {
 
 		.press {
 			margin: 0 auto;
-			padding-top: 5em;
+			padding-top: 7.5em;
 			text-align: center;
 			
 			img {
@@ -155,48 +194,15 @@ header {
 	} /* Banner style end */
 }
 
-// --------------------- Banner Styles ------------------------ //
+// --------------------- services Section Styles ------------------------ //
 
 .services {
 	max-width: 1200px;
   margin: 0 auto;
   text-align: center;
   margin-top: 6em;
+  margin-bottom: 6em;
   position: relative;
-
-  .section-header {
-  	margin-bottom: 40px;
-
-  	h1 {
-  		font-size: 2.2em;
-	    font-weight: 400;
-	    margin: 0 auto;
-	    color: $main;
-	    position: relative;
-	    padding-bottom: 25px;
-	    margin-bottom: 25px;
-	    text-align: center;
-
-	    &:before {
-	    	content: "";
-		    display: block;
-		    width: 90px;
-		    height: 3px;
-		    background: #76b133;
-		    position: absolute;
-		    margin: auto;
-		    left: 0;
-		    right: 0;
-		    bottom: 0;
-	    }
-  	}
-
-  	p {
-	   	color: $secondary;
-	   	font-size: 0.9em;
-	  }
-
-  }
 
   .services-list {
   	margin-top: 5em;
@@ -240,6 +246,59 @@ header {
 		}
   }
 
+}
+
+// --------------------- Call to Action Section ------------------------ //
+
+
+.call-to-action {
+	background: url(../assets/images/call-to-action-1.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: rgba(36,36,46,0.75);
+	background-blend-mode: darken;
+	height: 350px;
+	margin: 0 auto;
+
+	.wrapper {
+		max-width: 1220px;
+		margin: 0 auto;
+		text-align: center;
+
+		.call {
+	  	float: left;
+	  	color: $white;
+	  	font-size: 1em;
+	  	width: 50%;
+	  	line-height: 1.5;
+	    margin: 7.5em auto;
+	    text-align: center;
+	    font-weight: 400;
+	  }
+
+	  .btn-secondary {
+	  	margin-top: 8.3em;
+	  	background-color: $highlight_3;
+	  	color: $white;
+	  	-webkit-box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+	  	-moz-box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+	  	box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+    	transition: box-shadow 0.3s ease-in-out;
+    	letter-spacing: 0.08em;
+	  }
+	}
+  
+}
+
+// --------------------- Works Section Styles ------------------------ //
+
+.works {
+	max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 6em;
+  position: relative;
 }
 
     
