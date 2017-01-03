@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Proza+Libre:400,500,700');
+
+// --------------------- Variable Definition --------------------- //
+
+$white:       #FFFFFF;
+$main:        #38454f;
+$secondary:   #717e88;
+$border:      #d9dee9;
+$highlight_1: #fd7473; // Red
+$highlight_2: #76b133; // lime
+$highlight_3: #128DE0; // Blue
+$highlight_4: #9f68d0; // Purple
+
+// --------------------- General Styles ------------------------ //
+
+body {
+	font-family: 'Proza Libre', sans-serif;
+	font-weight: 500;
+}
+
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.btn {
+	font-family: 'Proza Libre', sans-serif;
+	text-transform: uppercase;
+	display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+	background-image: none;
+	border: 1px solid #48a0dc;
+	font-size: 1.15em;
+	border-radius: 0.25em;
+	padding: 0.8em 2.2em;
+}
+
+.btn-primary {
+	border-color: $highlight_2;
+  color: $white;
+  background-color: $highlight_2;
+}
+
+
+// --------------------- Banner Styles ------------------------ //
+
+header {
+
+	.banner {
+		background: url(../assets/images/banner-background.jpeg);
+		background-color: rgba(36,36,46,0.75);
+	  background-blend-mode: darken;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 700px;
+		margin: 0 auto;
+
+		.navigation {
+			padding: 1em 10em;
+			margin-bottom: 8.5em;
+			max-width: 1220px;
+
+			.logo {
+				float: left;
+				padding-top: .6em;
+
+				img {
+					width: 60px;
+					height: 50px;
+					float: left;
+				}
+
+				h1 {
+					float: left;
+					margin: 0 0 0 .5em;
+					text-transform: uppercase;
+					font-size: 1.35em;
+					padding-top: .6em;
+					color: $white;
+					font-weight: 700;
+					span {
+						color: $highlight_2;
+					}
+				}
+
+			}
+
+			.main-nav {
+				float: right;
+				padding-top: 1.7em;
+
+				a {
+					text-decoration: none;
+					padding-left: 1em;
+					color: $border;
+					font-weight: 500;
+					font-size: 1em;
+
+					&:hover {
+						color: $highlight_3;
+					}
+				}
+
+			}
+		}
+
+		.hero-tag {
+			margin: 0 auto;
+			text-align: center;
+			color: $white;
+
+			.tag-line {
+				font-size: 2.5em;
+		    font-weight: 600;
+		    margin-bottom: 0.8em;
+			}
+
+			.company-line {
+				font-size: 1em;
+		    line-height: 1;
+		    margin-bottom: 3em;
+		    font-weight: 400;
+			}
+
+			.trial {
+		    font-size: 0.75em;
+		    margin-bottom: 0.9em;
+		    opacity: .45;
+		    line-height: 1;
+	    	margin-top: 0.75em;
+			}
+
+		}
+
+		.press {
+			margin: 0 auto;
+			padding-top: 5em;
+			text-align: center;
+			
+			img {
+				width: 50%;
+			}
+		}
+
+
+	} /* Banner style end */
+}
+
+// --------------------- Banner Styles ------------------------ //
+
+.services {
+	max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 6em;
+  position: relative;
+
+  .section-header {
+  	margin-bottom: 40px;
+
+  	h1 {
+  		font-size: 2.2em;
+	    font-weight: 400;
+	    margin: 0 auto;
+	    color: $main;
+	    position: relative;
+	    padding-bottom: 25px;
+	    margin-bottom: 25px;
+	    text-align: center;
+
+	    &:before {
+	    	content: "";
+		    display: block;
+		    width: 90px;
+		    height: 3px;
+		    background: #76b133;
+		    position: absolute;
+		    margin: auto;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+	    }
+  	}
+
+  	p {
+	   	color: $secondary;
+	   	font-size: 0.9em;
+	  }
+
+  }
+
+  .services-list {
+  	margin-top: 5em;
+		ul {
+			list-style: none;
+			margin: 0 auto;
+
+			li {
+				display: inline-block;
+				text-align: center;
+				margin: 0 auto;
+				float: left;
+				padding-right: 3.33%;
+				width: 30%;
+
+				img {
+					width: 75px;
+				}
+
+				.smaller {
+					width: 65px;
+				}
+
+				h3 {
+					color: $main;
+					font-size: 1.125em;
+			    margin-bottom: 15px;
+			    line-height: 1.1
+				}
+
+				p {
+					color: $secondary;
+					font-size: 0.85em;
+					line-height: 1.5;
+					word-wrap: break-word;
+					text-align: center;
+					font-weight: 400;
+				}
+
+			}
+		}
+  }
+
+}
+
+    
+
