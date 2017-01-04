@@ -1,0 +1,122 @@
+/* Laptop and Ipad landscape mode */
+
+@media only screen and (max-width: 980px) {
+	header {
+		.banner {
+			height: 500px;
+			.navigation {
+				padding: 1em 3em;
+				margin-bottom: 4.5em;
+
+				.logo {
+					img {
+						width: 40px;
+						height: 50px;
+					}
+					h1 {
+						font-size: 1em;
+						padding-top: 0.7em
+					}
+				}
+				.main-nav {
+					padding-top: 1.25em;
+					a {
+						font-size: 0.8em;
+					}
+				}
+			}
+
+			.hero-tag {
+				.tag-line {
+					font-size: 2em;
+		    	font-weight: 600;
+		    	margin-bottom: 0.6em;
+				}
+				.company-line {
+					font-size: 0.85em;
+			    line-height: 0.5;
+			    margin-bottom: 2.6em;
+			    font-weight: 400;
+				}
+				.trial {
+			    font-size: 0.7em;
+			    margin-bottom: 0.7em;
+			    opacity: .65;
+			    line-height: 0.6;
+		    	margin-top: 0.75em;
+				}
+			}
+			.press {
+				margin: 0 auto;
+				padding-top: 3.5em;
+				text-align: center;
+				
+				img {
+					width: 50%;
+				}
+			}
+
+
+		}
+	}
+}
+
+
+
+/*
+header {
+
+	.banner {
+		background: url(../assets/images/banner-background.jpeg);
+		background-color: rgba(36,36,46,0.75);
+	  background-blend-mode: darken;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 700px;
+		margin: 0 auto;
+
+		
+
+		.hero-tag {
+			margin: 0 auto;
+			text-align: center;
+			color: $white;
+
+			.tag-line {
+				font-size: 2.5em;
+		    font-weight: 600;
+		    margin-bottom: 0.8em;
+			}
+
+			.company-line {
+				font-size: 1em;
+		    line-height: 1;
+		    margin-bottom: 3em;
+		    font-weight: 400;
+			}
+
+			.trial {
+		    font-size: 0.75em;
+		    margin-bottom: 0.9em;
+		    opacity: .45;
+		    line-height: 1;
+	    	margin-top: 0.75em;
+			}
+
+		}
+
+		.press {
+			margin: 0 auto;
+			padding-top: 7.5em;
+			text-align: center;
+			
+			img {
+				width: 50%;
+			}
+		}
+
+
+	} 
+}
+		
+*/

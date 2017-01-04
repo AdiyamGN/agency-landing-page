@@ -54,7 +54,7 @@ body {
 }
 
 .section-header {
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 
 	h1 {
 		font-size: 2.2em;
@@ -369,6 +369,8 @@ header {
   }
 }
 
+// --------------------- Testimonial Section Styles ------------------------ //
+
 .testimonial {
 	max-width: 1220px;
 	margin: 0 auto;
@@ -385,6 +387,7 @@ header {
   	.client-unit {
   		position: absolute;
   		margin: 0 auto;
+  		margin-left: 12em;
   		text-align: center;
   		display: none;
 
@@ -410,16 +413,27 @@ header {
 
 				.client_title {
 					font-style: normal;
-					font-size: 12px;
-					color: #999;
+					font-size: 0.85em;
+					color: #717e88;
+					line-height: 1.5;
+					font-weight: 400;
 				}
 
   		}
 
   		.client-content {
   			position: relative;
-  			max-width: 60%;
+  			max-width: 40%;
   			padding-top: 2em;
+
+  			p {
+  				color: #717e88;
+			    font-size: 0.85em;
+			    line-height: 1.5;
+			    word-wrap: break-word;
+			    text-align: center;
+			    font-weight: 400;
+  			}
 
   			.quote-mark {
   				position: absolute;
@@ -456,9 +470,114 @@ header {
 				padding-bottom: 1em;
 				box-shadow: 0px 4px 0px 0px $highlight_3; 
 			}
+
   	}
 
   }
 }
+
+// --------------------- Team Section Styles ------------------------ //
+
+.team {
+	max-width: 1220px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 6em;
+  margin-bottom: 6em;
+
+  .team-members {
+  	ul {
+  		list-style: none;
+  		margin: 0;
+  		padding: 0;
+
+  		li {
+  			display: inline-block;
+  			margin: 0;
+  			padding: 0;
+  			width: 25%;
+
+  			img {
+				  border-radius: 50%;
+			    width: 174px;
+			    height: 174px;
+			    margin: auto;
+			    margin-bottom: 1.2em;
+  			}
+
+  			.title {
+  				font-size: 1.2em;
+  				color: $secondary;
+  				padding: 0;
+  				margin: 0;
+  				text-align: center;
+  				padding-bottom: 1em;
+  			}
+
+  			.social {
+  				ul {
+  					margin: 0;
+  					padding: 0;
+
+  					li {
+  						margin: 0;
+  						padding: 0;
+
+  						i {
+  							width: 1.9em;
+  							height: 1.9em;
+  							color: $white;
+  							line-height: 1.9;
+  							font-size: 1.2em;
+  							background: $secondary;
+  							border-radius: 50%;
+
+  							&:hover {
+  								background: $highlight_3;
+  								transform: scale(1.2);
+  							}
+  						}
+  					}
+  				}
+  			}
+
+  		}
+  	}
+  }
+}
+
+// ------------------------- Footer Styles ------------------------------ //
+
+.main-footer {
+	padding: 2em 0;
+	background: $main;
+	text-align: center;
+	.logo {
+		img {
+			width: 50px;
+			height: 50px;
+		}
+	
+	}
+	.copyright {
+		color: $white;
+		font-size: 0.75em;
+		margin: 0;
+	}
+	.links {
+		display: inline;
+		a {
+			text-decoration: none;
+			font-size: .75em;
+			margin: 0 0.5em;
+			color: $white;
+			&:hover {
+				color: $highlight_3;
+			}
+		}
+	}
+}
+
+@import 'mobile';
     
 
