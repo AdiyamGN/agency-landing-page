@@ -1,13 +1,13 @@
 /* Laptop and Ipad landscape mode */
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1050px) {
 	header {
 		.banner {
+			max-width: 100%;
 			height: 500px;
 			.navigation {
-				padding: 1em 3em;
+				padding: 1em 0;
 				margin-bottom: 4.5em;
-
 				.logo {
 					img {
 						width: 40px;
@@ -20,12 +20,12 @@
 				}
 				.main-nav {
 					padding-top: 1.25em;
+					padding-right: 4em;
 					a {
 						font-size: 0.8em;
 					}
 				}
 			}
-
 			.hero-tag {
 				.tag-line {
 					font-size: 2em;
@@ -55,68 +55,267 @@
 					width: 50%;
 				}
 			}
-
-
 		}
 	}
 }
 
+/* Tablet and Notebook */
 
-
-/*
-header {
-
-	.banner {
-		background: url(../assets/images/banner-background.jpeg);
-		background-color: rgba(36,36,46,0.75);
-	  background-blend-mode: darken;
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 700px;
-		margin: 0 auto;
-
-		
-
-		.hero-tag {
-			margin: 0 auto;
-			text-align: center;
-			color: $white;
-
-			.tag-line {
-				font-size: 2.5em;
-		    font-weight: 600;
-		    margin-bottom: 0.8em;
-			}
-
-			.company-line {
-				font-size: 1em;
-		    line-height: 1;
-		    margin-bottom: 3em;
-		    font-weight: 400;
-			}
-
-			.trial {
-		    font-size: 0.75em;
-		    margin-bottom: 0.9em;
-		    opacity: .45;
-		    line-height: 1;
-	    	margin-top: 0.75em;
-			}
-
+@media only screen and (max-width: 790px) {
+	.section-header {
+		margin-bottom: 40px;
+		h1 {
+			font-size: 1.75em;
 		}
+		p {
+	   	font-size: 0.95em;
+	  }
+	}
+	header {
+		.main-nav {
+			display: none;
+			padding: 0;
+			margin: 0;
+		}
+		.banner {
+			max-width: 100%;
+			.main-nav {
+				padding: 0;
+				margin: 0;
+				a {
+					padding-left: 0;
+				}
+			}
+			.navigation {
+				.menu {
+					display: block;
+					float: right;
+					padding-right: 2em;
+					z-index: 1;
+					i {
+						font-size: 1.5em;
+						padding-top: 0.45em;
+						color: $white;
+					}
+				}
 
-		.press {
-			margin: 0 auto;
-			padding-top: 7.5em;
-			text-align: center;
-			
-			img {
-				width: 50%;
+			}	
+			.main-nav.active {
+				top: 0;
+				left: 0;
+				z-index: 1;
+				position: fixed;
+				display: block;
+				height: 100%;
+				width: 100%;
+			  background-color: #232842;
+			  overflow-x: hidden;
+			  transition: 0.5s;
+			  text-align: center;
+				a {
+					display: block;
+					font-size: 1.2em;
+			    font-weight: 700;
+			    letter-spacing: 0.25em;
+			    text-transform: uppercase;
+			    line-height: 4em;
+					padding: 1em 0;
+					padding-left: 0;
+					border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+					&:last-child {
+						border-bottom: none;
+					}		
+				}
+			}
+			.hero-tag {
+				.tag-line {
+					font-size: 1.8em;
+				}
 			}
 		}
+	}
 
+	.call-to-action {
+		.wrapper {
+			.call {
+				width: 60%;
+				font-size: 0.8em;
+			}
+			.btn-secondary {
+			  margin-top: 6.3em;
+			}
+		}
+	}
 
-	} 
+	.services {
+		.services-list {
+			ul {
+				li {
+					h3 {
+						font-size: 0.9em;
+					}
+					p {
+						font-size: 0.6em;
+					}
+				}
+			}
+		}
+	}
+
+	.testimonial {
+	  .client-belt {
+	  	.client-unit {
+	  		margin-left: 3em;
+	  		.client-content {
+					position: relative;
+					max-width: 65%;
+		  	}
+	  	}
+		}
+	}
 }
-		
-*/
+
+/* Phone */
+
+@media only screen and (max-width: 620px) {
+	.section-header {
+		margin-bottom: 40px;
+		h1 {
+			font-size: 1.2em;
+		}
+		p {
+	   	font-size: 0.65em;
+	  }
+	}
+	header {
+		.banner {
+			.navigation {
+				.logo {
+					float: left;
+					padding-top: .6em;
+					padding-left: 1em;
+					img {
+						width: 40px;
+						height: 30px;
+						float: left;
+					}
+					h1 {
+						font-size: 1em;
+						padding-top: .3em;
+					}
+				}
+			}
+			.hero-tag {
+				.tag-line {
+					font-size: 1.5em;
+				}
+				.company-line {
+					font-size: 0.75em;
+			    line-height: 1.2;
+				}
+			}
+			.press {
+				padding-top: 3.5em;
+				img {
+					width: 80%;
+				}
+			}
+		} 
+	}
+	.services {
+	  margin-top: 3em;
+	  margin-bottom: 3em;
+	  .services-list {
+	  	margin-top: 3em;
+			ul {
+    		padding: 0;
+				li {
+					display: block;
+					float: none;
+					padding-right: 0;
+					width: 100%;
+					p {
+						font-size: 0.75em;
+					}
+				}
+			}
+	  }
+	}
+	.call-to-action {
+		.wrapper {
+			max-width: 100%;
+			.call {
+		  	float: none;
+		  	width: 95%;
+		    margin: 1.5em auto;
+		    padding-left: 0;
+		    font-size: .8em;
+		    font-weight: 300;
+		  }
+		  .btn-secondary {
+		  	margin: 1.5em 0;
+		  }
+		} 
+	}
+	.works {
+		margin-top: 3em;
+	  margin-bottom: 3em;
+	  .work-list {
+	  	li {
+				width: 100%;
+				float: none;
+				display: block;
+			}
+	  }
+	}
+	.testimonial {
+		display: none;
+	}
+
+	.team {
+		margin-top: 3em;
+	  margin-bottom: 3em;
+
+	  .team-members {
+	  	ul {
+	  		li {
+	  			display: block;
+	  			margin-bottom: 2em;
+	  			width: 100%;
+
+	  			img {
+	  				margin-bottom: 0.7em;
+	  			}
+
+	  			.title {
+	  				font-size: 1em;
+	  				padding-bottom: 0.5em
+	  			}
+
+	  			.social {
+	  				ul {
+	  					li {
+	  						display: inline;
+	  						margin-right: 0.9em
+	  						i {
+	  							width: 1.5em;
+	  							height: 1.5em;
+	  							line-height: 1.5;
+	  							font-size: 0.8em;
+
+	  							&:hover {
+	  								background: $highlight_3;
+	  								transform: scale(1.2);
+	  							}
+	  						}
+	  					}
+	  				}
+	  			}
+
+	  		}
+	  	}
+	  }
+	}
+
+}
+

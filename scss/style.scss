@@ -16,6 +16,7 @@ $highlight_4: #9f68d0; // Purple
 body {
 	font-family: 'Proza Libre', sans-serif;
 	font-weight: 500;
+	max-width: 100%;
 }
 
 
@@ -93,24 +94,25 @@ body {
 // --------------------- Banner Styles ------------------------ //
 
 header {
-
+	max-width: 100%;
 	.banner {
 		background: url(../assets/images/banner-background.jpeg);
 		background-color: rgba(36,36,46,0.75);
 	  background-blend-mode: darken;
 		background-repeat: no-repeat;
 		background-size: cover;
-		height: 700px;
+		background-position: center;
+		max-width: 100%;
 		margin: 0 auto;
 
 		.navigation {
-			padding: 1em 10em;
+			padding: 1em 0;
 			margin-bottom: 8.5em;
-			max-width: 1220px;
 
 			.logo {
 				float: left;
 				padding-top: .6em;
+				padding-left: 3em;
 
 				img {
 					width: 60px;
@@ -135,7 +137,8 @@ header {
 
 			.main-nav {
 				float: right;
-				padding-top: 1.7em;
+				padding-right: 2em;
+				padding-top: 1.5em;
 
 				a {
 					text-decoration: none;
@@ -182,7 +185,8 @@ header {
 
 		.press {
 			margin: 0 auto;
-			padding-top: 7.5em;
+			padding-top: 5.5em;
+    	padding-bottom: 3em;
 			text-align: center;
 			
 			img {
@@ -190,14 +194,16 @@ header {
 			}
 		}
 
-
+		.menu {
+			display: none;
+		}
 	} /* Banner style end */
 }
 
 // --------------------- services Section Styles ------------------------ //
 
 .services {
-	max-width: 1200px;
+	max-width: 100%;
   margin: 0 auto;
   text-align: center;
   margin-top: 6em;
@@ -254,18 +260,15 @@ header {
 .call-to-action {
 	background: url(../assets/images/call-to-action-1.jpg);
 	background-position: center;
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-color: rgba(36,36,46,0.75);
 	background-blend-mode: darken;
-	height: 350px;
 	margin: 0 auto;
-
 	.wrapper {
-		max-width: 1220px;
+		max-width: 100%;
 		margin: 0 auto;
 		text-align: center;
-
 		.call {
 	  	float: left;
 	  	color: $white;
@@ -273,10 +276,9 @@ header {
 	  	width: 50%;
 	  	line-height: 1.5;
 	    margin: 7em auto;
+	    padding-left: 4em;
 	    text-align: center;
-	    font-weight: 400;
 	  }
-
 	  .btn-secondary {
 	  	margin-top: 8.3em;
 	  	background-color: $highlight_3;
@@ -287,14 +289,13 @@ header {
     	transition: box-shadow 0.3s ease-in-out;
     	letter-spacing: 0.08em;
 	  }
-	}
-  
+	} 
 }
 
 // --------------------- Works Section Styles ------------------------ //
 
 .works {
-	max-width: 1220px;
+	max-width: 100%;
   margin: 0 auto;
   text-align: center;
   margin-top: 6em;
@@ -372,7 +373,7 @@ header {
 // --------------------- Testimonial Section Styles ------------------------ //
 
 .testimonial {
-	max-width: 1220px;
+	max-width: 100%;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 6em;
@@ -396,7 +397,7 @@ header {
   		}
 
   		.client_face {
-  			min-width: 300px;
+  			max-width: 300px;
 				text-align: center;
 
 				img {
@@ -423,8 +424,7 @@ header {
 
   		.client-content {
   			position: relative;
-  			max-width: 40%;
-  			padding-top: 2em;
+  			max-width: 50%;
 
   			p {
   				color: #717e88;
@@ -437,7 +437,7 @@ header {
 
   			.quote-mark {
   				position: absolute;
-  				top: 15px;
+  				top: -15px;
   				right: null;
   				bottom: null;
   				left: -20px;
@@ -451,7 +451,6 @@ header {
   }
 
   .clients-logos {
-  	width: 100%;
   	position: relative;
 		display: flex;
 		align-items: space-around;
@@ -461,8 +460,7 @@ header {
   	.client-logo {
   		margin: 0 auto;
   		margin-top: 3em;
-			height: 80px;
-			min-width: 200px;
+			max-width: 150px;
 			
 			cursor: pointer;
 
@@ -479,7 +477,7 @@ header {
 // --------------------- Team Section Styles ------------------------ //
 
 .team {
-	max-width: 1220px;
+	max-width: 100%;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 6em;
